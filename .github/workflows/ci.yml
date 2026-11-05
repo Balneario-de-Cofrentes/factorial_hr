@@ -17,8 +17,8 @@ jobs:
       - name: Set up Erlang/Elixir
         uses: erlef/setup-beam@v1
         with:
-          otp-version: "27"
-          elixir-version: "1.18"
+          otp-version: "29"
+          elixir-version: "1.20"
 
       - name: Restore deps cache
         uses: actions/cache@v5
