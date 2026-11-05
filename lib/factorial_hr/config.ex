@@ -159,8 +159,6 @@ defmodule FactorialHR.Config do
     end
   end
 
-  defp split_versioned_api_url(_url), do: :error
-
   defp normalize_auth_mode(mode) when mode in [:bearer, "bearer"], do: :bearer
 
   defp normalize_auth_mode(mode) when mode in [:api_key, "api_key", "apikey", "x-api-key"],
